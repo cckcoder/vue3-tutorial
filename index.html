@@ -24,7 +24,7 @@
         <input type="text" v-model="firstName">
 
         <label for="firstName">Last Name</label>
-        <input type="text" :value="lastName" @input="updateLastName('Last name event trigger!', $event)">
+        <input type="text" :value="lastName" @input.prevent="updateLastName('Last name event trigger!', $event)">
 
         <hr>
 
