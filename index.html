@@ -12,7 +12,7 @@
     <div id="app" v-cloak>
         <p>{{ fullName() }}</p>
         <p>
-            <a href="http://google.com" target="_blank">Google</a>
+            <a v-bind:href="url" target="_blank">Google</a>
         </p>
         <hr>
 
