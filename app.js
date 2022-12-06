@@ -26,6 +26,14 @@ const vm = Vue.createApp({
             console.log("Full name computed property call!!");
             return  `${this.firstName} | ${this.middleName} | ${this.lastName.toUpperCase()}` 
         },
+    },
+    watch: {
+        age(newVal, oldVal) {
+            console.log(newVal);
+            setTimeout(() => {
+                this.age = 20
+            }, 3000)
+        }
     }
 }).mount('#app')
 
