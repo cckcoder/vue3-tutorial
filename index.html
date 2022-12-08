@@ -16,6 +16,10 @@
     </template>
     <p v-else>v-else</p>
 
+    <div>
+      <p v-show="mode ==1">This is v-show</p>
+    </div>
+
     <select v-model="mode">
       <option value="1">v-if</option>
       <option value="2">v-else-if</option>
