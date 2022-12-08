@@ -12,7 +12,7 @@
     <div id="app">
       <h2>Array Loop</h2>
       <ul>
-        <li v-for="(bird, index) in birds" :class="bird">
+        <li v-for="(bird, index) in birds" :class="bird" :key="bird">
           {{ bird }} index: {{ index }}
         </li>
       </ul>
