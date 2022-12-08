@@ -10,9 +10,19 @@
 <body>
 
     <div id="app">
+      <h2>Array Loop</h2>
       <ul>
         <li v-for="(bird, index) in birds" :class="bird">
           {{ bird }} index: {{ index }}
+        </li>
+      </ul>
+
+      <hr>
+
+      <h2>Object Loop</h2>
+      <ul>
+        <li v-for="person in people">
+          {{ person.name }} | Age: {{ person.age }}
         </li>
       </ul>
     </div> 
