@@ -9,33 +9,8 @@
 </head>
 <body>
 
-    <div id="app" v-cloak>
-        <p>{{ fullName }}</p>
-        <p>
-            <a :href="url" target="_blank">Google</a>
-        </p>
-
-        <p v-html="rawUrl"></p>
-
-        <p>{{ typeof age }}</p>
-        <hr>
-
-        <label for="firstName">First Name</label>
-        <input type="text" v-model.lazy.trim="firstName">
-
-        <label for="middleName">Middle Name</label>
-        <input type="text" @keyup.enter="updateMiddleName">
-
-        <label for="lastName">Last Name</label>
-        <input type="text" :value="lastName" @input.prevent="updateLastName('Last name event trigger!', $event)">
-
-        <hr>
-
-        <label for="age">Age</label>
-        <input type="number" v-model.number="age">
-
-        <button type="button" @click="increment">Increment</button>
-        <button type="button" @click="age--">Decrement</button>
+    <div id="app">
+      
     </div> 
 
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
