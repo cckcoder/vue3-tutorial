@@ -1,13 +1,7 @@
 let vm = Vue.createApp({
     data() {
         return {
-            isPurple: false,
-            selectedColor: ''
+            mode: 1,
         }
     },
-    computed: {
-        circleClasses() {
-            return { purple: this.isPurple }
-        }
-    }
 }).mount('#app')
