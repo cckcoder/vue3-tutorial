@@ -10,7 +10,10 @@
 
   <div id="app">
     <p v-if="mode == 1">Showing v-if directive content</p>
-    <p v-else-if="mode == 2">v-else-if</p>
+    <template v-else-if="mode == 2">
+      <h2>V-else-if</h2>
+      <p>v-else-if</p>
+    </template>
     <p v-else>v-else</p>
 
     <select v-model="mode">
